@@ -3,18 +3,6 @@ var myApp = angular.module('config2', ['ui.router']);
 myApp.config(function($stateProvider) {
   var states = [
     { 
-      name: 'hello', 
-      url: '/hello', 
-      component: 'hello'  
-    },
-    
-    { 
-      name: 'about', 
-      url: '/about', 
-      component: 'about'
-    },
-    
-    { 
       name: 'people', 
       url: '/people', 
       component: 'people',
