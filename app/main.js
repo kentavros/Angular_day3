@@ -1,5 +1,5 @@
 
-var app = angular.module("app", [])
+var app = angular.module("app", ['ui.router'])
 app.controller('SettingsController1', SettingsController1)
 function SettingsController1($scope, listFn){
     console.log(listFn)

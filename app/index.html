@@ -4,6 +4,7 @@
         <script src="./lib/angular/angular.min.js"></script>
         <script src="main.js"></script>        
         <script src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="config.js"></script>        
     </head>
     <body> 
         <left-side></left-side>
@@ -17,7 +18,11 @@
             <my-dialog info="test"></my-dialog>
         </div>
 
-
+        <div ng-app="config">
+        <a ui-sref="hello" ui-sref-active="active">Hello</a>
+        <a ui-sref="about" ui-sref-active="active">About</a>
+        </div>  
+        <ui-view></ui-view>
     </body>
     
 </html>
