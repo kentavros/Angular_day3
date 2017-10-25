@@ -11,7 +11,14 @@ app.config(function($stateProvider) {
       url: '/about',
       template: '<h3>Its the UI-Router hello world app!</h3>'
     }
+
+    var pageState = {
+        name: 'page',
+        url: '/page/:id',
+        template: '<h1>Page</h1>'
+    }
   
     $stateProvider.state(helloState);
     $stateProvider.state(aboutState);
+    $stateProvider.state(pageState);
   });

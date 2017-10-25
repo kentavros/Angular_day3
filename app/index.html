@@ -1,28 +1,19 @@
-<!DOCTYPE html>
-<html ng-app="app">
-    <head>
-        <script src="./lib/angular/angular.min.js"></script>
-        <script src="main.js"></script>        
-        <script src="./lib/angular-ui-router/release/angular-ui-router.min.js"></script>
-        <script src="config.js"></script>        
-    </head>
-    <body> 
-        <left-side></left-side>
-
-
-        <div ng-controller="SettingsController1">
-            <my-input info="list"></my-input>
-        </div>
-
-        <div ng-controller="SettingsController1">
-            <my-dialog info="test"></my-dialog>
-        </div>
-
-        <div ng-app="config">
-        <a ui-sref="hello" ui-sref-active="active">Hello</a>
-        <a ui-sref="about" ui-sref-active="active">About</a>
-        </div>  
-        <ui-view></ui-view>
-    </body>
-    
-</html>
+<html>
+        <head>
+          <script src="//npmcdn.com/angular@1.6.5/angular.js"></script>
+          <script src="//npmcdn.com/@uirouter/angularjs@1.0.5/release/angular-ui-router.js"></script>
+          <script src="config2.js"></script>
+          <script src="services/people.js"></script>
+          <script src="people.js"></script>
+          <script src="person.js"></script>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        
+        <body ng-app="config2">
+        
+          
+          <a ui-sref="people" ui-sref-active="active">People</a>
+          
+          <ui-view></ui-view>
+        </body> 
+      </html>
